@@ -2,14 +2,44 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+// tslint:disable-next-line:import-spacing
+import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule, MatToolbarModule, MatSidenavModule, MatListModule }
+ from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomIconService } from './services/custom-icon.services';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ProductComponent } from './product/product.component';
+import { ProductDetailComponent } from './product/product-detail/product-detail.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingEditComponent } from './shopping-cart/shopping-edit/shopping-edit.component';
+import { ContactComponent } from './contact/contact.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ProductComponent,
+    ProductDetailComponent,
+    ProductListComponent,
+    ProductItemComponent,
+    ShoppingCartComponent,
+    ShoppingEditComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
@@ -19,9 +49,17 @@ import { AppComponent } from './app.component';
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CustomIconService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
