@@ -9,14 +9,14 @@ import * as Immutable from 'immutable';
 })
 export class HomeComponent {
   imageUrls = [
-    { url: 'https://cdn.pixabay.com/photo/2013/11/01/19/14/rice-fields-204128_960_720.jpg',
+    { url: 'https://cdn.pixabay.com/photo/2017/06/19/19/58/sunset-2420745_960_720.jpg',
     caption: 'The first slide', href: '#config' },
     { url: 'https://cdn.pixabay.com/photo/2014/05/14/06/09/plantation-343915_960_720.jpg',
      clickAction: () => alert('custom click function') },
     { url: 'https://c1.staticflickr.com/9/8107/8553791518_4f6ca16b3d_b.jpg',
     caption: 'Apple TV', href: 'https://www.apple.com/' },
     'https://s-i.huffpost.com/gen/2016778/images/o-BROWN-SUGAR-facebook.jpg'];
-  height: string = '650px';
+  height: string = '500px';
   width: string = '400px';
   minHeight: string;
   arrowSize: string = '30px';
