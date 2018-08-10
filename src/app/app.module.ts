@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 
 
@@ -55,7 +56,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatListModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    SlideshowModule
   ],
   providers: [
     CustomIconService
