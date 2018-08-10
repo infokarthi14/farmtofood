@@ -24,7 +24,12 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import {Routes, ROUTES, Router, RouterModule} from '@angular/router';
 
+const appRoutes : Routes = [
+{ path : '' , component: HomeComponent }
+{ path : 'about' , component: AboutComponent }
+];
 
 
 @NgModule({
@@ -57,7 +62,9 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     MatListModule,
     FlexLayoutModule,
     HttpClientModule,
-    SlideshowModule
+    SlideshowModule,
+    RouterModule.forRoot(appRoutes)
+
   ],
   providers: [
     CustomIconService

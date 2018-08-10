@@ -1,96 +1,100 @@
+<div style="height: 100vh;">
 
-    <div style="height: 100vh;">
+  <mat-toolbar class="bb" >
 
-        <mat-toolbar class="transparent">
-      
-          <a href="#" mat-button>Farm2Food</a>
-      
-          <span class="example-spacer"></span>
-      
-          <div fxShow="true" fxHide.lt-md="true">
-      
-            <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      
-            
-            <a  href="#">
-                <mat-icon svgIcon="farm"></mat-icon>
-              </a>
-           
-              <a  href="#">
-                <mat-icon svgIcon="tractor"></mat-icon>
-              </a>
-      
-              <a  href="#">
-                <mat-icon svgIcon="product"></mat-icon>
-              </a>
-      
-              <a  href="#">
-                <mat-icon svgIcon="bucket"></mat-icon>
-              </a>
-      
-      
-              <a  href="#">
-                <mat-icon svgIcon="farmer"></mat-icon>
-              </a>
-      
-          </div>
 
-          
-      
-          <div fxShow="true" fxHide.gt-sm="true">
-      
-            <!--  <a href="#" (click)="sidenav.toggle()">Farm2Food</a> -->
-      
-            <a (click)="sidenav.toggle()" href="#">
-              <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-            </a>
-      
-      
-      
-          </div>
-      
-        </mat-toolbar>
+    <a href="#">
+      <mat-icon svgIcon="field"></mat-icon>
+      <span class="ex1"> Farm2Food</span>
+    </a>
 
-        <app-home></app-home>
-      
-        <mat-sidenav-container fxFlexFill class="example-container">
-      
-          <mat-sidenav #sidenav fxLayout="column">
-      
-            <div fxLayout="column" fxLayoutAlign="center center">
-      
-                  <a  href="#">
-                    <mat-icon svgIcon="farm"></mat-icon>
-                  </a>
-               
-                  <a  href="#">
-                    <mat-icon svgIcon="tractor"></mat-icon>
-                  </a>
-          
-                  <a  href="#">
-                    <mat-icon svgIcon="product"></mat-icon>
-                  </a>
-          
-                  <a  href="#">
-                    <mat-icon svgIcon="bucket"></mat-icon>
-                  </a>
-          
-          
-                  <a  href="#">
-                    <mat-icon svgIcon="farmer"></mat-icon>
-                  </a>
-          
-      
-              <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-      
-            </div>
-      
-          </mat-sidenav>
-      
-          <mat-sidenav-content fxFlexFill></mat-sidenav-content>
-      
-        </mat-sidenav-container>
-      
+    <span class="example-spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+
+      <a href="#">
+        <mat-icon svgIcon="farm"></mat-icon>
+        <span> Home</span>
+      </a>
+
+      <a href="#">
+        <mat-icon svgIcon="tractor"></mat-icon>
+        <span> About</span>
+      </a>
+
+      <a href="#">
+        <mat-icon svgIcon="product"></mat-icon>
+        <span> Product</span>
+      </a>
+
+      <a href="#">
+        <mat-icon svgIcon="bucket"></mat-icon>
+        <span>Cart</span>
+      </a>
+
+      <a href="#">
+        <mat-icon svgIcon="farmer"></mat-icon>
+        <span> Contact Us</span>
+      </a>
+
+    </div>
+
+    <div fxShow="true" fxHide.gt-sm="true">
+
+      <!--  <a href="#" (click)="sidenav.toggle()">Farm2Food</a> -->
+
+      <a (click)="sidenav.toggle()" href="#">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </a>
+
+    </div>
+
+  </mat-toolbar>
+
+  <app-home></app-home>
+
+  <mat-sidenav-container fxFlexFill class="example-container">
+
+    <mat-sidenav #sidenav fxLayout="column">
+
+      <div fxLayout="column" fxLayoutAlign="center center">
+
+        <a href="#">
+          <mat-icon svgIcon="farm"></mat-icon>
+          <span> Home</span>
+        </a>
+
+        <a href="#">
+          <mat-icon svgIcon="tractor"></mat-icon>
+          <span> About</span>
+        </a>
+
+        <a href="#">
+          <mat-icon svgIcon="product"></mat-icon>
+          <span> Product</span>
+        </a>
+
+        <a href="#">
+          <mat-icon svgIcon="bucket"></mat-icon>
+          <span>Cart</span>
+        </a>
+
+        <a href="#">
+          <mat-icon svgIcon="farmer"></mat-icon>
+          <span> Contact Us</span>
+        </a>
+
+
+        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
+
       </div>
-    
-  
+
+    </mat-sidenav>
+
+    <mat-sidenav-content fxFlexFill></mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</div>

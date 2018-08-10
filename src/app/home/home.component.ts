@@ -9,22 +9,21 @@ import * as Immutable from 'immutable';
 })
 export class HomeComponent {
   imageUrls = [
-    { url: 'https://cdn.pixabay.com/photo/2017/06/19/19/58/sunset-2420745_960_720.jpg',
+    { url: '../assets/1.jpg',
     caption: 'The first slide', href: '#config' },
-    { url: 'https://cdn.pixabay.com/photo/2014/05/14/06/09/plantation-343915_960_720.jpg',
+    { url: '../assets/2.jpg',
      clickAction: () => alert('custom click function') },
-    { url: 'https://c1.staticflickr.com/9/8107/8553791518_4f6ca16b3d_b.jpg',
-    caption: 'Apple TV', href: 'https://www.apple.com/' },
-    'https://s-i.huffpost.com/gen/2016778/images/o-BROWN-SUGAR-facebook.jpg'];
-  height: string = '500px';
-  width: string = '400px';
+    { url: '../assets/3.jpg',
+    caption: 'Apple TV',  href: 'https://www.apple.com/' },
+    '../assets/4.jpg'];
+  height: string = '600px';
   minHeight: string;
   arrowSize: string = '30px';
-  showArrows: boolean = true;
+  showArrows: boolean = false;
   disableSwiping: boolean = false;
   autoPlay: boolean = true;
-  autoPlayInterval: number = 3333;
-  stopAutoPlayOnSlide: boolean = true;
+  autoPlayInterval: number = 4444;
+  stopAutoPlayOnSlide: boolean = false;
   debug: boolean = true;
   backgroundSize: string = 'cover';
   backgroundPosition: string = 'center center';

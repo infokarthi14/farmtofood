@@ -22,6 +22,7 @@ export class MainNavComponent {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
     private customIconService: CustomIconService) {
+      this.matIconRegistry.addSvgIcon('field', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/field.svg'));
       this.matIconRegistry.addSvgIcon('farm', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/farm.svg'));
       this.matIconRegistry.addSvgIcon('tractor', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/tractor.svg'));
       this.matIconRegistry.addSvgIcon('product', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/product.svg'));

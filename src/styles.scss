@@ -10,7 +10,6 @@ $warn:    mat-palette($mat-red, 500);
 
 $config: mat-typography-config();
 
-
 $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
@@ -25,3 +24,7 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
+.ex1{
+
+  font-size:x-large;
+} 
