@@ -7,6 +7,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
+
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
