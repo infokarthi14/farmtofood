@@ -10,7 +10,7 @@ import * as Immutable from 'immutable';
 export class HomeComponent {
   imageUrls = [
     { url: '../assets/1.jpg',
-    caption: 'The first slide', href: '#config' },
+    caption: 'The first slide', href: 'home' },
     { url: '../assets/2.jpg',
      clickAction: () => alert('custom click function') },
     { url: '../assets/3.jpg',

@@ -22,8 +22,6 @@ export class HeaderComponent  {
       this.matIconRegistry.addSvgIcon('bucket', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/bucket.svg'));
       this.matIconRegistry.addSvgIcon('product', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/product.svg'));
       this.matIconRegistry.addSvgIcon('farmer', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/farmer.svg'));
-    )
-
     // using service to register custom icon
     this.customIconService.init();
 

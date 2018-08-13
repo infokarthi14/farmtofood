@@ -9,8 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 
 const routes: Routes = [
-    { path: '', component: MainNavComponent },
-    { path: 'home', component: MainNavComponent },
+    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'product', component: ProductComponent },
     { path: 'shopping-cart', component: ShoppingCartComponent },
